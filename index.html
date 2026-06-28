@@ -43,27 +43,33 @@
                 color: #8e96f0;
             }
         }
+        blockquote p::before {
+            content: "\201C";
+        }
+
+        blockquote p::after {
+            content: "\201D";
+        }
+
+        blockquote + p {
+            text-align: right;
+        }
     </style>
 </head>
 <body>
+    <p style="text-align: end">
+        <a href="https://davidandrade.mx/">inicio →</a>
+    </p>
     <header>
-        <h1>🔑 GPG Key</h1>
+        <h1>GPG Key</h1>
         <p>
             Mi llave pública está disponible aquí
             <a href="pubkey.asc">pubkey.asc</a>.
         </p>
     </header>
-
-    <blockquote>
-        "Cuida la retaguardia, y recuerda... ¡no confíes en nadie!".
-        <br />
-        - Billy 'BB' Boon
-    </blockquote>
-
     <br />
-    <footer>
-        <p style="text-align: end">
-            <a href="https://davidandrade.mx/">inicio →</a>
-        </p>
-    </footer>
+    <blockquote cite="https://youtu.be/WdajkNQQrNM?t=447">
+        <p>Cuida la retaguardia, y recuerda... ¡no confíes en nadie!.</p>
+    </blockquote>
+    <p>— Billy 'BB' Boon, <cite>Los Misterios de Moville</cite></p>
 </body>
